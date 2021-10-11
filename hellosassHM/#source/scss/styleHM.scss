@@ -1,0 +1,614 @@
+//Шрифты
+@font-face {
+    font-family: "Roboto-400";
+    src: url("/hellosassHM/fonts/Roboto/Roboto-Regular.ttf")
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/hellosassHM/fonts/Roboto/Roboto-Bold.ttf")
+}
+@font-face {
+    font-family: "DM Serif Display";
+    src: url("/hellosassHM/fonts/DMSerifDisplay/DMSerifDisplay-Regular.ttf");
+}
+@font-face{
+    font-family: "SourceSansPro";
+    src: url("/hellosassHM/fonts/Source_Sans_Pro/SourceSansPro-Regular.otf");
+}
+@font-face{
+    font-family: "Merriweather-Regular";
+    src: url("/hellosassHM/fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+// Фаил обнуляющих стилей
+@import "nullstyleHM.scss";
+
+body{
+    background-color: #F9F7F4;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+    
+}
+
+
+//Шапка страницы
+.header {
+    margin: 0 0 130px 0;
+    
+}
+.header-container {
+    padding: 0 120px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+    
+}
+.header-title {
+}
+.header-list {
+    font-family: "Roboto-400";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    li{
+        a{
+            color: #65727B;
+        }
+        display: inline-block;
+        margin: 0 50px 0 0 ;
+        
+        :last-child{
+            margin: 0;
+        }
+        :hover{
+            text-decoration: underline;
+        }
+        :active{
+            color: black;
+        }
+    }
+    
+}
+.header-list li:nth-child(1){
+    :nth-child(1){
+        background-color: rgba(101, 114, 123, 0.2);
+        height: 38px;
+        padding: 8px 20px;
+        border-radius: 40px;
+        color: #28514F;
+    }
+}
+// Конец шапки
+.container{
+    margin: 0 250px;
+    
+}
+
+//первая страница
+
+.reimagining {
+    
+}
+.reimagining-container {
+    
+}
+.reimagining-row {
+    display: flex;
+    flex-direction: column;
+    
+}
+.reimagining-title {
+}
+.title {
+
+    font-size: "DM Serif Display";
+    font-size: 48px;
+    line-height: 56px;
+    color: #28514F;
+    text-align: center;
+    margin: 0 0 38px 0;
+}
+.reimagining-text {
+}    
+.text{
+    font-family: "SourceSansPro";
+    text-align: center;
+    font-size: 21px;
+    line-height: 32px;
+    color: #65727B;
+    margin: 0 0 46px 0;
+}
+
+// Ссылки на онлайн магазины
+.reimagining-block {
+    display: flex;
+    justify-content: center;
+    
+}
+.reimagining-link{
+    font-family: "SourceSansPro";
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+}
+.link-app{
+    height: 56px;
+    margin: 0 20px 0 0;
+    background-color: #28514F;
+    border-radius: 50px;
+    padding: 17px 32px 17px 25px;
+    img{
+        margin: 0 11px 0 0;
+    }
+    
+    
+}
+.reimagining-block-play {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.link-play{
+    height: 56px;
+    background: #AEB4B6;
+    border-radius: 50px;
+    padding: 17px 30px 17px 24px;
+    flex: 1 1 auto;
+    
+    img{
+        margin: 0 12px 15px 0 ;
+    }
+    
+}
+.reimagining-p{
+    font-family: "SourceSansPro";
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #65727B;
+    margin: 0 0 97px 0;
+}
+//
+
+
+.reimagining-image {
+    justify-content: center;
+    margin: 0 0 103px 85px; //отступ слева выставил примерно
+    
+}
+.reimagining-footer {
+    text-align: center;
+    margin: 0 0 169px 0;
+}
+
+
+//2-я страница//
+.plan {
+}
+.plan-container {
+    
+}
+.plan-title {
+}
+.title {
+}
+.plan-text {
+    margin: 0 0 105px 0;
+}
+.text{}
+
+.plan-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.plan-column {
+    flex: 0 1 50%;
+    border-radius: 20px;
+    padding: 60px 50px;
+    max-width: 460px;
+}
+.column-1{
+    align-self: flex-end;
+    background-color: #DAE1F4;
+    margin: 0 20px 12px 0 ;
+}
+.column-2{
+    background-color: #D0E6F3;
+    margin: 0 0 12px;
+}
+.column-3{
+    background-color: #E0F0E6;
+    margin: 0 20px 0 0;
+}
+.column-4{
+    background-color: #F4F0E9;
+    align-self: flex-start;
+}
+
+.plan-column-image {
+}
+.plan-column-icon {
+}
+.plan-column-heading {
+    font-family: "Roboto-Bold";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #1B1F2B;
+}
+.plan-column-text {
+    font-family: "Roboto-400";
+    font-size: 17px;
+    line-height: 24px;
+    color: #1B1F2B;
+}
+
+
+.image-1 {
+    margin: 0 0 40px 0;
+}
+.icon-1{
+    margin: 0 0 19px 0;
+}
+.heading-1{
+    margin: 0 0 58px 0;
+}
+.text-1{}
+
+
+.icon-2{
+    margin: 0 0 19px 0;
+}
+.heading-2{
+    margin: 0 0 11px 0;
+}
+.text-2{
+    margin: 0 0 35px 0;
+}
+.image-2 {
+}
+
+
+
+.image-3 {
+    margin: 0 0 40px 0;
+}
+.icon-3{
+    margin: 0 0 19px 0;
+}
+.heading-3{
+    margin: 0 0 11px 0;
+}
+.text-3{}
+
+.plan-footer{
+    margin: 172px 0 169px 0;
+    text-align: center;
+}
+
+//Пункт с вопросом?
+.question {
+    margin: 0 0 25px 0;
+}
+.question-title {
+}
+.title {
+}
+.question-text {
+}
+.text {
+}
+.question-row {
+    display: flex;
+
+}
+.question-body {
+    
+    flex: 0 1 33.33%;
+    padding: 32px 31px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.body1{
+    margin: 0 20px 0 0 ;
+}
+.body2{
+    margin: 0 20px 0 0;
+}
+.body3{}
+
+.question-description{
+    font-family: "Merriweather-Regular";
+    font-size: 13px;
+    line-height: 20px;
+    color: #1B1F2B;
+    margin: 0 0 19px 0;
+    max-width: 218px;
+}
+.question-stars {
+    max-height: 23px;
+    margin: 0 0 24px 0;
+}
+.question-block {
+    display: flex;
+    
+}
+.question-image {
+    margin: 0 10px 0 0;
+}
+.question-block-inform{
+    font-family: "SourceSansPro";
+    
+    
+}
+.question-name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #1B1F2B;
+}
+.question-sistem {
+    font-size: 14px;
+    line-height: 17px;
+    color: #65727B;
+    
+}
+
+//прямогольник
+.rectangle{
+    background-color:  #008C6E;
+    background-position: 50%;
+    border-radius: 30px;
+    height: 14px;
+    width: 25px;
+    margin: 0 auto; 
+    
+}
+//
+
+.like {
+    background: #28514F;
+    margin: 151px 0 0 0 ;
+    
+}
+
+
+.like-image {
+    position: absolute;
+    left: calc(50% - 173px/2 + 0.5px);
+    top: calc(50% - 196px/2 - 335.75px);
+    text-align: center;
+}
+.like-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px 250px;
+    padding: 210px 0 0 0 ;
+}
+.like-title {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 auto 38px auto;
+    max-width: 583px;
+    
+    
+    
+}
+.like-text {
+    font-family: "SourceSansPro";
+    font-size: 21px;
+    line-height: 32px;
+    margin: 0 auto 76px auto;
+    max-width: 610px;
+    
+}
+.like-button {
+    height: 55px;
+    margin: 0 auto;
+    padding: 14px 32px 18px 32px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    line-height: 23px;
+    span{
+        font-family: "SourceSansPro";
+        color: #28514F;
+    }
+    
+}
+.like-background {
+    
+    height: 270px;
+    background: url(/hellosassHM/img/page3/phons.png);
+}
+
+//
+
+.stay {
+    margin: 49px 0 194px 0;
+    background-color: #F8E6BE;
+    padding: 0 10px;
+    max-height: 348px;
+    min-width: 940px;// Нужна ли эта ширина?
+}
+.stay-row {
+    display: flex;
+    justify-content: space-between;
+}
+.stay-block {
+    margin: 118px 40px 0 90px;
+}
+.stay-title {
+    font-family:"DM Serif Display";
+    font-size: 40px;
+    line-height: 47px;
+    color: #333333;
+    margin: 0 0 33px 0;
+}
+.stay-button {
+    display: flex;
+}
+.reimagining-link {
+}
+.link-app {
+}
+.reimagining-block-play {
+}
+.link-play {
+}
+.reimagining-p {
+}
+.stay-image {
+    
+}
+// 
+
+.join {
+    margin: 0 0 198px 0;
+}
+.join-block { 
+    
+}
+.joim-title {
+}
+.title {
+}
+.join-text {
+    max-width: 620px;
+    margin: 0 auto 36px auto;
+}
+.text {
+}
+.join-row {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+input[name="email"]{
+    border-radius: 40px 0px 0px 40px;
+    background-color: #fff;
+    padding: 18px 96px 19px 34px;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(40, 81, 79, 0.5);
+}
+button[name="button"]{
+    background-color: #28514F;
+    padding: 12px 30px 12px 13px;
+    color: #fff;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 17px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+.join-row-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    font-size: 13px;
+    line-height: 20px;
+    color: #65727B;
+}
+// Разделение линией
+.line {
+    margin: 0 0 77px 0;
+}
+//
+
+.footer-harbor {
+    font-family: "Roboto";
+}
+.footer-image {
+    margin: 0 0 10px 0;
+}
+.footer-harbor-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+.block-text {
+    font-size: 13px;
+    line-height: 20px;
+    color: #65727B;
+}
+.menu {
+    display: flex;
+    a{
+        font-size: 19px;
+        line-height: 20px;
+        color: #65727B;
+    }
+}
+.menu-home {
+    margin: 0 40px 0 0 ;
+}
+.menu-about {
+    margin: 0 40px 0 0 ;
+}
+.menu-risks {
+}
+.social-network {
+    display: flex;
+}
+.social-network-twitter {
+    margin: 0 30px 0 0 ;
+}
+.social-network-inst {
+    margin: 0 30px 0 0 ;
+}
+.social-network-facebook {
+}
+
+.block-list1 {
+    display: flex;
+    a{
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #28514F;
+    }
+}
+.block-list1 li:nth-child(1){
+    margin: 0 83px 0 0 ;
+}
+.block-list1 li:nth-child(2){
+    margin: 0 89px 0 0 ;
+}
+.block-list2 {
+    display: flex;
+    a{
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #28514F;
+    }
+}
+.block-list2 li:nth-child(1){
+    margin: 0 85px 0 0 ;
+}
+.block-list2 li:nth-child(2){
+    margin: 0 79px 0 0 ;
+}
+
+
+
+
+
+
+
+
+
